@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+body{
+  /* overflow-x: hidden; */
+  background-color: rgb(212, 124, 124);
+  
+}
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.bg{
+  background-image: url('bulb.gif');
+  background-repeat: no-repeat;
+  background-size: cover;
+  color:white;
+  font-family: ;
+}
+/* .navbar{
+  background-color: rgb(226, 102, 19);
+  
+ }
+ .navbar-nav{
+     background-color: #f17f28;
+  border: 2px solid;
+  display: flex;
+  justify-content: centre;
+  width: 70%;    
+ }
+ .button{
+  margin-right: 12rem;
+  display: flex;
+ } */
+#carouselExampleIndicators{
+    height: 100%;
+   
+    width: 100%;
+    
+    margin-right: 10%;
+    /* margin-top: 2rem; */
+    /* border: 0.5rem solid rgb(0, 0, 0); */
+    border-radius: 1rem;
+    /* padding: 2rem; */
+    overflow: hidden;
+}
+#img2{
+    border-radius: 0.2rem;
+}
+#About{
+    /* margin: auto; */
+    margin-left: 7%;
+    margin-right: 7%;
+    width: 100%;
+    
+    background-color: transparent;
+    /* border: 0.2rem solid rgb(33, 7, 57); */
+}
+#Abt{
+  background-color: rgb(255, 255, 255);
+  color: black;
+}
+
+#chart_div{
+  position: relative;
+  border: 0.2rem solid rgb(210, 202, 217);
+  width: 100%;
+}
+
+
+#Cont{
+  background-image: url(bg2.png);
+   background-size: cover;
+  background-color: rgb(214, 145, 145);
+  width: 100%;
+  margin: 0 auto;
+}
+
+#box2{
+  margin-top: 4rem;
+  display: flex;
+    margin-left: 0%;
+    margin-right: 0%;
+  border: 0.1rem solid rgb(191, 111, 111);
+}
+
+h2{
+  color: hsl(0, 0%,30%);
+  font-size:50px;
+  font-weight: bold;
+  font-family: monospace;
+  letter-spacing: 7px;
+  cursor: pointer;
+  text-transform: uppercase;
+  background: linear-gradient(
+      to right,
+  rgb(0, 0, 0) 0,
+   hsl(0, 0%,100%) 10%, 
+   rgb(12, 12, 12) 20%);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   animation: shine 3s infinite linear;
+   padding: 40px;
+
+}
+@keyframes shine{
+  0% {
+      background-position 0;
+ }
+ 60%{
+     background-position: 600px;
+ }
+ 100%{
+     background-position: 600px
+ }
+}
+
+/* @media screen and (min-width: 601px) {
+  div.example {
+    font-size: 80px;
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+  div.example {
+    font-size: 30px;
+  }
+}
+ */

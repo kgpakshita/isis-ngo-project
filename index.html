@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- favicon here -->
+    <link rel="icon" type="image/png" href="favicon.jpeg">
+    <link rel="stylesheet" href="styl.css">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+        google.charts.load('current', {'packages':['corechart']});
+        google.charts.setOnLoadCallback(drawVisualization);
+        
+        function drawVisualization() {
+            // Some raw data (not necessarily accurate)
+            var data = google.visualization.arrayToDataTable([
+                ['Month', 'Food packets Distributed', 'Employed People', 'Students', 'Health Checkups', 'Child Labourers'],
+                ['2017/18',  650,                        938,         522,             998,           450,         ],
+                ['2018/19',  700,                        1120,        599,             1268,          300,       ],
+                ['2019/20',  1500,                        500,        487,             1567,           264,       ],
+                ['2020/21',  1800,                        800,        615,             1989,           215,         ],
+                ['2021/22',  2000,                        1300,         700,             1487,          130,         ]
+            ]);
+            
+            var options = {
+                title : 'Survey in Areas of our impact',
+                vAxis: {title: 'Numbers'},
+                hAxis: {title: 'Year'},
+                seriesType: 'bars',
+                series: {5: {type: 'line'}}
+            };
+            
+            var chart = new google.visualization.ComboChart(document.getElementById('chart_div'));
+            chart.draw(data, options);
+      }
+       
+      </script>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+      <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
+      <title>ISIS NGO</title>
+</head>
+<body style="background-color: rgb(212, 124, 124);">
+<style>
+   .navbar{
+ 
+ /* background-color: rgb(219, 129, 129); */
+ background-color: rgb(253, 85, 55);
+ 
+}
+.navbar-nav{
+    background-color: #fa6d22;
+ border: 2px solid;
+ display: flex;
+ justify-content: centre;
+ width: 70%;    
+}
+.button{
+ margin-right: 12rem;
+ display: flex;
+}
+</style>
+
+<!-- corousel here -->
+      <div id="carouselExampleIndicators" class="carousel slide display-3" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="w1.webp" class="d-block w-100" alt="...">
+            <!-- <div class="container-xl text-center bg-info">Our Efforts Towards Poor Children
+            </div> -->
+            </div>
+          <div class="carousel-item" id="img2">
+            <img src="w6.jpg" class="d-block w-100" alt="..."> 
+            <!-- <div class="container-xl text-center bg-info">Our Efforts Towards Skill Development
+            </div> -->
+          </div>
+          <div class="carousel-item" id="img3">
+            <img src="child smile.jpg" class="d-block w-100" alt="...">
+            <!-- <div id="Cont3" class="container-xl text-center bg-info ">Our Efforts Towards Education
+            </div> -->
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+
+<!-- navbar here -->
+    <!-- <nav class="navbar sticky-top navbar-expand-md navbar-light ">
+      <div class="container-xxl ">
+          <a href="#intro" class="navbar-brand">
+          <span class="fw-bold text-white">
+          ISIS NGO
+          </span></a>       
+          
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation" >
+              <span class="navbar-toggler-icon"></span>
+          </button>
+           <div class="collapse navbar-collapse justify-content-end  col-md-8 text-white" id="navbarTogglerDemo03">
+        <ul class="navbar-nav">
+          
+          <li class="nav-item">
+            <a href="#About" class="nav-link text-white">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="initiatives.html" class="nav-link text-white">Initiatives</a>
+          </li>
+          <li class="nav-item">
+            <a href="impact.html" class="nav-link text-white">Our Achievements</a>
+          </li>
+          <li class="nav-item">
+            <a href="getinvolved.html" class="nav-link text-white">Join Us</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link text-white">Contact Us</a>
+          </li>
+        </ul>
+        </div>
+      </div>
+      <div class="button display-6">
+          
+          <button class="btn btn-primary">Donate</button>
+          </div>
+    </nav><br> -->
+    <nav class="navbar sticky-top navbar-expand-md navbar-light ">
+      <div class="container-xxl ">
+          <a href="#intro" class="navbar-brand">
+          <span class="fw-bold text-white">
+          ISIS NGO
+          </span></a>       
+          
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation" >
+              <span class="navbar-toggler-icon"></span>
+          </button>
+           <div class="collapse navbar-collapse justify-content-end  col-md-8 text-white" id="navbarTogglerDemo03">
+        <ul class="navbar-nav">
+          
+          <li class="nav-item">
+            <a href="#About" class="nav-link text-white">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="initiatives.html" class="nav-link text-white">Initiatives</a>
+          </li>
+          <li class="nav-item">
+            <a href="impact.html" class="nav-link text-white">Our Achievements</a>
+          </li>
+          <li class="nav-item">
+            <a href="getinvolved.html" class="nav-link text-white">Join Us</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link text-white">Contact Us</a>
+          </li>
+        </ul>
+        </div>
+      </div>
+      <div class="button display-6">
+          
+          <button class="btn btn-primary">Donate</button>
+          </div>
+    </nav>
+    <div data-aos="flip-left" data-aos-duration="2000" data-aos-delay="1000" class="display-5 text-center"> <strong>ESTABLISHED IN 1990s</strong></div>
+    <div data-aos="flip-right" data-aos-duration="2000" data-aos-delay="1000" class="display-5 text-center"><strong>WORKING TOWARDS BETTEREMENT EVER SINCE BEGINNNING</strong></div>
+    <!-- div for about us -->
+    <div class="bg shadow-lg text-center p-5 m-5 "style="font-size:28px;">
+        <h1 class="container-xxxl text-center w-100 h-60rem border rounded-pill" id="Abt">About Us</h1> <br><br> <h1>ISIS NGO-1990</h1><br>
+    ISIS Foundation, an Indian social development organization, is directly benefitting over 15 lakh children and their families every year. We have more than 400 live welfare projects on education, healthcare, livelihood, and women’s empowerment in over 2,000 remote villages and urban slums across 25 states of India.
+      <br><br>
+      The groundwork for a better life lies in education. It is the most powerful catalyst for social transformation. However, a child cannot be educated in isolation. Only an empowered family, especially the mother, would be willing to educate their child. Thus, rather than focusing on only one stage of a person's life, we believe in the lifecycle approach.
+      <br><br>
+      Education empowers an individual to earn their livelihood and also increases one's awareness on a range of issues. From healthcare, to appropriate social behavior, to understanding one's rights – ISIS Foundation seeks to educate, empower and cultivate better citizens.<br>.<br>. NGO stands for non-governmental organization. While there is no universally agreed-upon definition of an NGO, typically it is a voluntary group or institution with a social mission, which operates independently from the government.
+      <br><br>
+      NGOs or similar organizations exist in all parts of the world. What is considered an NGO in one country may not qualify as an NGO in another, as legal definitions, permitted activities, monitoring, and oversight differ from country to country. The term can encompass many types of organizations.
+
+  </div>
+  
+<div class="chart">  
+    <div class="p-2 w-100 bd-highlight"> 
+        <!-- <div id="box2">  -->
+            <div class="container-fluid">
+            <div class="container-xl px-0 w-100 ">
+            <div class="d-flex justify-content-space-evenly"> 
+                    <div class="A" id="chart_div" style="width:25rem; height: 35rem;"></div>
+                    <div  id="Cont" class="container-xxl shadow-lg">
+                        <h2 class="text-centre"><strong>The Transformation We are Bringing About In Our Society</strong></h2>
+                       <p class="text-center display-6" style="font-family: 'Dancing Script', cursive">In keeping with its philosophy of 'Real Work Real Change', <strong>ISIS Foundation , an NGO in ISRAIL, PAKISTAN, TALIBAAN, SYRIA, and many more countries</strong> to support the underserved,has taken its <strong>intervention into the interiors of India</strong>, reaching the unreached in the remotest of rural areas and urban slums with our services and making this helping foundation in India,the best NGO in India.</p>
+                </div>
+                </div>
+                </div>
+            </div>
+                </div>
+                </div>
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+        
+     </div> 
+</div>
+
+    </script>
+</div>
+</div>
+
+
+    
+  <div class="p-3 m-3 shadow-sm"><h1 class="text-center">PUBLICATIONS AND ACHIEVMENTS</h1>
+    <div class="card-group m-3 p-3">
+      <div class="card transparent">
+        <!-- <img src="..." class="card-img-top" alt="..."> -->
+        <div class="card-body">
+          <h5 class="card-title text-center">26/11 ATTACK</h5>
+          <p class="card-text">After years of dedication herdwork and planning we achieved thi great succes to help the injured people due to these attacks</p>
+          <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+        </div>
+      </div>
+      <div class="card transparent">
+        <!-- <img src="..." class="card-img-top" alt="..."> -->
+        <div class="card-body">
+          <h5 class="card-title text-center">TAJ ATTACK</h5>
+          <p class="card-text">Our support was constant and unparalled during the whole incident.We were the one taking whole responsibility at the planned event</p>
+          <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+        </div>
+      </div>
+      <div class="card">
+        <!-- <img src="..." class="card-img-top" alt="..."> -->
+        <div class="card-body">
+          <h5 class="card-title text-center">MANY MORE CONTRIBUTIONS</h5>
+          <p class="card-text">We have and will keep contribution in the betterment of this nation and world as a whole AMEN!</p>
+          <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+        </div>
+      </div>
+    </div>
+</div>
+<div class="mt-5 p-4 bg-dark text-white text-center">
+  <p>Thanks for visiting !</p>
+  <p>&#169; Aditya Raj; Akshita Jain; Mahesh Yadav; Manaswi Raj </p>
+</div>
+  <!-- <script src="/line.js"></script> -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+      AOS.init();
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</div></body>
+</html>
