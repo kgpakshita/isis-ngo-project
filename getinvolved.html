@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <link rel="icon" type="image/png" href="favicon.jpeg">
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+     
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    
+    <title>GET TO KNOW US</title>
+  </head>
+  <body>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tapestry&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orelega+One&display=swap');
+      body { 
+        font-family: 'Dancing Script', cursive;
+        background-image: url('bg1.jpg');
+       
+      }
+      
+      h4{
+        text-align: center;
+       color: transparent;
+       font-size: 12vw;
+       font-family: 'Montserrat', sans-serif;;
+        background-image: url("blackk.jpg");
+        background-size: 10%;
+        background-position: 50% 50%;
+        -webkit-background-clip: text;
+        animation: zoomout 10s ease 0.5s forwards;
+    }
+    @keyframes zoomout{
+        from {
+            background-size: 40%;
+            }
+        to{
+            background-size: 100%;
+        }}
+        h2{
+        color: hsl(0, 0%,30%);
+        font-size:50px;
+        font-weight: bold;
+        font-family: monospace;
+        letter-spacing: 7px;
+        cursor: pointer;
+        text-transform: uppercase;
+        background: linear-gradient(
+            to right,
+        rgb(110, 110, 110) 0,
+         hsl(0, 0%,100%) 10%, 
+         hsl(0, 0%,30%) 20%);
+         -webkit-background-clip: text;
+         -webkit-text-fill-color: transparent;
+         animation: shine 3s infinite linear;
+         padding: 60px;
+
+    }
+    @keyframes shine{
+        0% {
+            background-position 0;
+       }
+       60%{
+           background-position: 600px;
+       }
+       100%{
+           background-position: 600px
+       }
+    }
+    #cor{
+      font-family: 'Tapestry', cursive;
+    }
+    .navbar{
+ 
+ background-color: rgb(219, 129, 129);
+ background-color: rgb(0,0,0);
+ 
+}
+.navbar-nav{
+ border: 2px solid;
+ display: flex;
+ justify-content: centre;
+ /* background-color: #ffbc7f; */
+ width: 70%;
+ /* margin-right: 10rem; */
+ 
+}
+.button{
+ margin-right: 12rem;
+ display: flex;
+}
+#cas{
+  font-family: 'Orelega One', cursive;
+}
+    
+    </style>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    
+    
+  <!-- COROUSEL HERE -->
+    <div class="my-1 mx-5 p-3 border border-5 border-success shadow-lg col-fluid overflow-hidden" id="cor">
+      <div id="carouselExampleControls" class="carousel slide container-sm" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            
+            <div class="card bg-dark text-white text-center">
+              <img src="Child-Support.jpg" class="d-block w-100" alt="..." style="width: 100%; height:400px">
+              <div class="card-img-overlay">
+                <h1 class="card-title color-primary">TOGERTHER WE AN DO IT</h1>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <p class="card-text">-ISIS NGO, GYWS, IIT KGP</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item text-center">
+            <div class="card bg-dark text-white justify-content-center">
+              <img src="banner-1.webp" class="d-block w-100" alt="..." style="width: 100%; height:400px">
+              <div class="card-img-overlay">
+                <h1 class="card-title">IT TAKES A SINGLE STEP</h1>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <p class="card-text">-ISIS NGO, GYWS, IIT KGP</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item text-center">
+            <div class="card bg-dark text-white">
+              <img src="Child-Support.jpg" class="d-block w-100" alt="..." style="width: 100%; height:400px">
+              <div class="card-img-overlay">
+                <h1 class="card-title">NEVER TOO LATE</h1>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <p class="card-text">-ISIS NGO, GYWS, IIT KGP</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      </div>
+  <!-- NAVBAR HERE -->
+      <nav class="navbar sticky-top navbar-expand-md navbar-light ">
+        <div class="container-xxl ">
+            <a href="#intro" class="navbar-brand">
+            <span class="fw-bold text-white">
+            ISIS NGO
+            </span></a>       
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation" >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+             <div class="collapse navbar-collapse justify-content-end  col-md-8 text-white" id="navbarTogglerDemo03">
+          <ul class="navbar-nav">
+            
+            <li class="nav-item">
+              <a href="#About" class="nav-link text-white">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="initiatives.html" class="nav-link text-white">Initiatives</a>
+            </li>
+            <li class="nav-item">
+              <a href="impact.html" class="nav-link text-white">Our Achievements</a>
+            </li>
+            <li class="nav-item">
+              <a href="getinvolved.html" class="nav-link text-white">Join Us</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link text-white">Contact Us</a>
+            </li>
+          </ul>
+          </div>
+        </div>
+        <div class="button display-6">
+            
+            <button class="btn btn-primary">Donate</button>
+            </div></nav>
+    
+      <br><br><hr><br>
+      <h4><strong>ISIS NGO</strong></h4>
+
+  <!-- CARD GRID HERE -->
+      <div class="container shadow-lg p-5" id="cas" >
+  <div class="row">
+    <div class="col">
+      <div class="card mb-3 border border-5" style="max-width: 540px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="images (1).jpeg" class="img-fluid rounded-start" alt="...">
+          </div>
+
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">ITS ALL ABOUT GIVING</h5>
+              <p class="card-text">Its not how much we give, its about how much love we put into giving.</p>
+              <p class="card-text"><small class="text-muted">-MOTHER TERESA</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card mb-3 border border-5" style="max-width: 540px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="images.jpeg" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">LETS START NOW</h5>
+              <p class="card-text">Always give without remembering and always receive without forgetting.</p>
+              <p class="card-text"><small class="text-muted">-Brian Tracy</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  <div class="row">
+    <div class="col">
+      <div class="card mb-3 border border-5" style="max-width: 540px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="download.jpeg" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">SKILL DEVELOPMENT</h5>
+              <p class="card-text">It’s easier to take than to give. It’s nobler to give than to take. The thrill of taking lasts a day. The thrill of giving lasts a lifetime.</p>
+              <p class="card-text"><small class="text-muted">-Joan Marques</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card mb-3 border border-5" style="max-width: 540px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="download (1).jpeg" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">TIME TO PAY RENT</h5>
+              <p class="card-text">Service to others is the rent you pay for your room here on earth.</p><br>
+              <p class="card-text"><small class="text-muted">-Mohammed Ali</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card mb-3 m-5 p-5 display-6" style="max-width:70vw; background-color:rgb(183, 213, 213)">
+    <div class="row g-0">
+      <div class="col-md-8">
+        <img src="maps.png" class="img-fluid rounded-start" style="width:7800px; height:500px;" alt="...">
+      </div>
+      <div class="col-md-4">
+        <div class="card-body">
+         <h2 class="card-title"><strong>REACH OUT TO US</strong></h2>
+          <p class="card-text">GYWS is a home whose gates are always open.</p>
+          <p class="card-text"><small class="text-muted">IIT KHARAGPUR</small></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+      <div class="col-lg-6 p-5 m-5 shadow-lg display-flex">
+        <form>
+          <label for="name" class="form-label">NAME: </label>
+          <input type="text" class="form-control" placeholder="e.g. daanveer karn" id="name"><br>
+          <label for="email" class="form-label">EMAIL:</label>
+          <input type="email" class="form-control" placeholder="e.g. mahabharat@gmail.com" id="email"><br>
+          <label for="number" class="form-label">PHONE NUMBER:</label>
+          <input type="number" class="form-control" placeholder="e.g. 1234567890" id="number"><br>
+          <label for="query" class="form-label">Any Suggestions For Us</label>
+          <textarea class="form-control" placeholder="" name="suggestions" id="suggestions" style="height:140px;">
+          </textarea>
+        </form>      
+      </div>
+      
+      
+      
+<button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="Bottom popover">
+  DONATE NOW</button>
+</div></div>
+<!-- LAST BOX HERE -->
+<div class="mt-5 p-4 bg-dark text-white text-center">
+  <p>Thanks for visiting !</p>
+  <p>&#169;Aditya Raj; Akshita Jain; Mahesh Yadav; Manaswi Raj</p>
+</div>
+  </body>
+</html>

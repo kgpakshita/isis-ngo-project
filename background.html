@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            font-family:monospace;
+            color: white;
+            background-color: black;
+            overflow-x: hidden;
+        }
+        section{
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 400px;
+            padding: 100px 20vw;
+
+        }
+        .blue{
+            background: blue;
+
+        }
+        .red{
+            background: red;
+        }
+        .black{
+            background: black;
+        }
+        .curve{
+            position: relative;
+            height: 225px;
+            width: 100%;
+            bottom: 0;
+        }
+        .curve::before{
+            content: '';
+            display: block;
+            position: absolute;
+            border-radius: 100% 50%;
+            width: 95%;
+            height: 100%;
+            background-color:black;
+            transform: translate(48%, 110%);
+
+        }
+        .curve::after{ 
+           content: '';
+            display: block;
+            position: absolute;
+            border-radius: 100% 50%;
+            width: 93%;
+            height: 100%;
+            background-color:rgb(235, 27, 27);
+            transform: translate(-50%, -137%);
+            z-index: -1;
+
+        }
+    </style>
+
+</head>
+<body>
+    <section class="red">
+        <h1>nice curves</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita repudiandae recusandae incidunt ullam facilis dolorem autem molestias eius voluptates! Laborum libero debitis iure sit illo nisi, consequatur veniam porro provident?</p>
+        <div class="curve"></div>
+    </section>
+
+    <section>
+        <h1>nice curves</h1>
+        <p>Molestias culpa quo quidem necessitatibus modi inventore repellat nesciunt delectus nisi ducimus. Molestias illum culpa repudiandae, sed animi et nemo libero quibusdam assumenda dolor debitis quos delectus hic possimus minus.</p>
+        <div class="curve"></div>
+    </section>
+    <section class="blue">
+        <h1>nice curves</h1>
+        <p>Cumque praesentium et nobis error, accusamus ex eius odit dolorum dignissimos. Facere commodi cumque, unde doloribus cupiditate nobis! Unde cumque aperiam culpa earum, dicta ipsam in voluptate aut dolores? Molestias?</p>
+    </section>
+    <section>
+        <h1>nice curves</h1>
+        <p>Provident sint cupiditate in, quibusdam aperiam officiis esse earum illum a nam sapiente ipsum ad nobis impedit quod similique est et praesentium? Nihil quidem id blanditiis quia deserunt ab laudantium?</p>
+    </section>
+    <section>
+        <h1>nice curves</h1>
+        <p>Distinctio molestias expedita fuga sequi, est laboriosam voluptas! Cupiditate, earum ipsa explicabo fugiat quos provident. Quis ea soluta et maxime ipsa. Natus omnis in modi aliquid temporibus debitis accusamus dignissimos.</p>
+    </section>
+    <section>
+        <h1>nice curves</h1>
+        <p>Nulla vero suscipit molestiae eaque necessitatibus? Assumenda cum, cumque, eum architecto quae nisi, quas eveniet dolorum accusamus vitae autem. Quas repudiandae reiciendis illo vel exercitationem nemo provident tenetur rem perspiciatis?</p>
+    </section>
+    <section>
+        <h1>nice curves</h1>
+        <p>Magni, itaque aspernatur provident ipsum maiores inventore soluta optio? Eos maxime quae consectetur blanditiis dolores quaerat asperiores facilis impedit obcaecati vel. At sequi, velit qui minima praesentium accusantium porro doloribus.</p>
+    </section>
+    <section>
+        <h1>nice curves</h1>
+        <p>Praesentium sapiente ipsam dolore iusto explicabo ipsa corrupti dolor rerum aperiam, nemo ab quae a ratione doloremque accusantium nam deleniti labore reprehenderit? Ipsum fugit, alias assumenda consectetur tempora voluptatum magni.</p>
+    </section>
+</body>
+</html>
